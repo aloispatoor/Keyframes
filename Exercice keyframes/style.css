@@ -1,0 +1,59 @@
+.staticSquare{
+    display:block;
+    border:1px solid black;
+    width:500px;
+    height:500px;
+    padding:10px;
+}
+
+.movingItem{
+    display:block;
+    width:100px;
+    height:100px;
+    background-color: red;
+    animation-name: turn;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/*@keyframes turn{
+    25%{
+        background-color: blue;
+        border-radius:50%;
+        transform:translateX(20vw);
+    }
+    50%{
+        background-color: green;
+        border-radius: 0%;
+        transform:translate(20vw, 40vh);
+        
+    }
+    75%{
+        background-color: yellow;  
+        transform:translateY(40vh);
+    }
+    100%{
+        background-color:red;
+        transform:rotate(180deg);
+    }
+}*/
+
+@keyframes turn{
+    25%{
+        transform:translateX(400px);
+        border-radius:30%;
+        background-color: blue;
+    }
+    50%{
+        transform:translate(400px, 400px);
+        border-radius:0%;
+        background-color: green;
+    }
+    75%{
+        transform:translateY(400px);
+        background-color: yellow;
+    }
+    100%{  
+        transform: rotate(180deg);
+    }
+}
